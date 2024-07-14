@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor-de-fundo: #0d1420;
+  --cor-de-fundo-nav: #111a2b;
+  --cor-de-texto: #eeeeee;
+  --cor-destaque: #32bde0;
+  --cor-botao-hover: #393e46;
+
+  --fonte-de-titulo: "Krona One", sans-serif;
+  --fonte-de-texto: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-superior {
+  background-image: linear-gradient(
+    to top,
+    var(--cor-de-fundo-nav),
+    var(--cor-de-fundo)
+  );
+  display: flex;
+  justify-content: baseline;
+  gap: 20px;
+
+  border-bottom: 1px solid var(--cor-de-fundo-nav);
+
+  padding: 2% 8% 1%;
+}
+
+.menu-superior__link {
+  text-decoration: none;
+  color: var(--cor-destaque);
+  font-size: 1.5rem;
+  font-family: var(--fonte-de-titulo);
+}
+
+.menu-superior__link:hover {
+  border-radius: 8px;
+  background-color: var(--cor-botao-hover);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-de-texto);
+}
+
+.destaque-do-titulo {
+  color: var(--cor-destaque);
+}
+
+.apresentacao {
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+}
+
+.apresentacao__conteudo {
+  width: 70%;
+}
+
+.apresentacao__conteudo__titulo {
+  font-family: var(--fonte-de-titulo);
+  font-size: 2.25rem;
+}
+
+.apresentacao__conteudo__texto {
+  font-family: var(--fonte-de-texto);
+  font-size: 1.5rem;
+
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.apresentacao__imagem {
+  width: 50%;
+}
+
+.apresentacao__links__botao {
+  text-decoration: none;
+  color: var(--cor-de-texto);
+  font-size: 1.5rem;
+  font-family: var(--fonte-de-texto);
+  font-weight: 600;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 16px;
+  width: 65%;
+
+  border: 1px solid var(--cor-destaque);
+  border-radius: 8px;
+}
+
+.apresentacao__links__botao:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 32px;
+}
+
+.apresentacao__links__titulo {
+  font-family: var(--fonte-de-titulo);
+  font-size: 1.5rem;
+}
+
+.apresentacao__links__botao__img {
+  margin: 0 20px;
+  width: 32px;
+  height: 32px;
+}
+
+footer {
+  height: 80px;
+  background-color: var(--cor-destaque);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.copy {
+  color: var(--cor-de-fundo);
+  font-family: var(--fonte-de-texto);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1023px) {
+  .menu-superior {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu-superior__link,
+  .copy,
+  .apresentacao__links__titulo,
+  .apresentacao__links__botao {
+    font-size: 1rem;
+  }
+
+  .apresentacao__conteudo__titulo {
+    font-size: 1.5rem;
+  }
+}
