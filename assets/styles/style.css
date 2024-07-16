@@ -128,9 +128,6 @@ body {
   flex-direction: column;
   width: 70%;
 }
-.apresentacao__visualizacao__imagem {
-  width: 110%;
-}
 
 footer {
   height: 80px;
@@ -154,12 +151,10 @@ footer {
     justify-content: center;
   }
 
-  .menu-superior__link {
-    font-size: 0.75rem;
-  }
   .apresentacao {
     flex-direction: column-reverse;
-    padding-top: 0;
+    padding: 0 0 2rem 0;
+
     gap: 0;
   }
 
@@ -173,11 +168,15 @@ footer {
 }
 
 @media (max-width: 550px) {
-  .menu-superior__link,
   .copy,
-  .apresentacao__links__titulo,
   .apresentacao__links__botao {
     font-size: 1rem;
+  } 
+  
+  .menu-superior__link,
+  .apresentacao__links__titulo,
+  .apresentacao__conteudo__titulo {
+    font-size: 0.80rem;
   }
 
   .apresentacao__conteudo__titulo {
