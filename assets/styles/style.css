@@ -53,6 +53,9 @@ body {
 .destaque-do-titulo {
   color: var(--cor-destaque);
 }
+.destaque-do-texto {
+ color: var(--cor-de-texto); 
+}
 
 .apresentacao {
   padding: 2.5% 3%;
