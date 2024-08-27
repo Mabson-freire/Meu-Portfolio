@@ -52,13 +52,11 @@ body {
 
 .menu-superior__mudar-tema {
   background-color: transparent;
-  padding: 5px;
-  margin: 2px 2px 2px 2px ;
+  padding: .5%;
 
   color: var(--cor-de-texto);
   font-size: 1rem;
 
-  margin-left: 90%;
 
   border: 1px solid var(--cor-botao-hover);
   border-radius: 10px;
@@ -194,6 +192,10 @@ footer {
 
   .apresentacao__visualizacao {
     width: 50%;
+  }
+
+  .menu-superior__mudar-tema {
+    font-size: .5rem;
   }
 }
 
